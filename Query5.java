@@ -147,7 +147,7 @@ public class Query5 {
         Configuration conf = new Configuration();
         conf.set("mapred.textoutputformat.separator", ",");
         if (args.length != 2) {
-            System.err.println("Usage:  <HDFS input file1> <HDFS input file1> <HDFS output file>");
+            System.err.println("Usage:  <HDFS joined file1> <HDFS output file>");
             System.exit(2);
         }
         Job job = new Job(conf, "query5");
